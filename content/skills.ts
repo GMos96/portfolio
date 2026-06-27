@@ -40,7 +40,7 @@ export const skillGroups: SkillGroup[] = [
       "JUnit",
       "Karma",
       "Mockito",
-      "Selenium",
+      "Playwright",
       "GitHub Flow",
     ],
   },
