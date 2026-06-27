@@ -12,7 +12,8 @@ export function RoleCard({ role }: RoleCardProps) {
       <header className="space-y-1">
         <h3 className="text-lg font-semibold tracking-tight text-foreground sm:text-xl">
           {role.title}
-          <span className="text-zinc-400 dark:text-zinc-600"> · </span>
+          <span className="text-(--color-accent)"> · </span>{" "}
+          {/* Applying accent to the separator */}
           {role.companyUrl ? (
             <a
               href={role.companyUrl}

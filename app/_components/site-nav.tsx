@@ -46,7 +46,7 @@ export function SiteNav() {
                   className={
                     "font-mono text-xs uppercase tracking-widest transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground " +
                     (active
-                      ? "text-foreground"
+                      ? "text-(--color-accent) dark:text-(--color-accent-dark)"
                       : "text-zinc-500 hover:text-foreground")
                   }
                 >

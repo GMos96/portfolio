@@ -13,7 +13,7 @@ export function SiteFooter() {
           <li>
             <a
               href={`mailto:${profile.email}`}
-              className="hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground"
+              className="hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
             >
               Email
             </a>
@@ -23,23 +23,23 @@ export function SiteFooter() {
               href={profile.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground"
+              className="hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
             >
               LinkedIn
             </a>
           </li>
-          {profile.github ? (
+          {profile.github && (
             <li>
               <a
                 href={profile.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground"
+                className="hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
               >
                 GitHub
               </a>
             </li>
-          ) : null}
+          )}
         </ul>
       </div>
     </footer>

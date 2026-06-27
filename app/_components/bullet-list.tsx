@@ -9,7 +9,7 @@ export function BulletList({ items }: BulletListProps) {
         <li key={item} className="relative pl-5">
           <span
             aria-hidden="true"
-            className="absolute left-0 top-[0.7rem] h-px w-3 bg-zinc-400 dark:bg-zinc-600"
+            className="absolute left-0 top-[0.7rem] h-px w-3 bg-(--color-accent) dark:bg-(--color-accent-dark)"
           />
           {item}
         </li>
