@@ -6,7 +6,7 @@ import { SectionHeading } from "@/app/_components/section-heading";
 export const metadata: Metadata = {
   title: "Experience",
   description:
-    "Career history — engineering leadership and platform work at LexisNexis across Java, Spring Boot, Angular, and React.",
+    "Career history — engineering leadership and platform work at LexisNexis across .NET 8, Java, Angular, and React.",
 };
 
 export default function ExperiencePage() {
@@ -19,7 +19,10 @@ export default function ExperiencePage() {
       />
       <div className="mt-12 space-y-12">
         {experience.map((role) => (
-          <RoleCard key={`${role.company}-${role.title}-${role.dates.start}`} role={role} />
+          <RoleCard
+            key={`${role.company}-${role.title}-${role.dates.start}`}
+            role={role}
+          />
         ))}
       </div>
     </div>
