@@ -19,6 +19,16 @@ export type Role = {
   stack?: string[];
 };
 
+/**
+ * A single "Current Focus" item shown on the homepage — what I'm building,
+ * learning, or exploring right now. `label` is the accent kicker.
+ */
+export type FocusItem = {
+  label: string;
+  title: string;
+  description: string;
+};
+
 export type SkillGroup = {
   category: string;
   skills: string[];

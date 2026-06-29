@@ -31,7 +31,7 @@ export function SiteNav() {
       >
         <Link
           href="/"
-          className="font-mono text-sm font-medium tracking-tight text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground"
+          className="font-mono text-sm font-medium tracking-tight text-foreground transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
         >
           {profile.initials}
         </Link>
@@ -44,9 +44,9 @@ export function SiteNav() {
                   href={link.href}
                   aria-current={active ? "page" : undefined}
                   className={
-                    "font-mono text-xs uppercase tracking-widest transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground " +
+                    "font-mono text-xs uppercase tracking-widest transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent " +
                     (active
-                      ? "text-foreground"
+                      ? "text-accent"
                       : "text-zinc-500 hover:text-foreground")
                   }
                 >
