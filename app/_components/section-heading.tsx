@@ -8,7 +8,7 @@ export function SectionHeading({ kicker, title, description }: SectionHeadingPro
   return (
     <header className="space-y-3">
       {kicker ? (
-        <p className="font-mono text-xs uppercase tracking-widest text-zinc-500">
+        <p className="font-mono text-xs uppercase tracking-widest text-accent">
           {kicker}
         </p>
       ) : null}
