@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { education } from "@/content/education";
 import { profile } from "@/content/profile";
 import { skillGroups } from "@/content/skills";
+import { teamDevelopment } from "@/content/mentorship";
 import { SectionHeading } from "@/app/_components/section-heading";
 import { SkillGroup } from "@/app/_components/skill-group";
 
@@ -70,6 +71,33 @@ export default function AboutPage() {
             </li>
           ))}
         </ul>
+      </section>
+
+      <section className="mt-16 space-y-8">
+        <h2 className="text-xl font-semibold tracking-tight text-foreground sm:text-2xl">
+          Team Development
+        </h2>
+        <div className="space-y-8">
+          {teamDevelopment.map((entry) => (
+            <div key={entry.engineerName} className="border-l border-zinc-200 pl-6 dark:border-zinc-800">
+              <p className="text-base font-medium text-foreground">
+                {entry.engineerName}
+              </p>
+              <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                {entry.startLevel} → {entry.endLevel} ({entry.promotions} promotions)
+              </p>
+              <p className="mt-3 text-base leading-7 text-zinc-700 dark:text-zinc-300">
+                <span className="font-medium">The arc:</span> {entry.arc}
+              </p>
+              <p className="mt-3 text-base leading-7 text-zinc-700 dark:text-zinc-300">
+                <span className="font-medium">How I taught:</span> {entry.approach}
+              </p>
+              <p className="mt-3 text-base leading-7 text-zinc-700 dark:text-zinc-300">
+                <span className="font-medium">Where they are now:</span> {entry.outcome}
+              </p>
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   );

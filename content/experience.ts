@@ -8,7 +8,7 @@ export const experience: Role[] = [
     location: "Raleigh, NC",
     dates: { start: "2025-07", end: null },
     highlights: [
-      "Lead two engineering teams on Vault, a document vectorization platform integrated with Lexis+ Protege, enabling multi-modal AI workflows across multiple LLMs and supporting enterprise-scale legal document processing for 50K+ users.",
+      "Lead two engineering teams on Vault, a document vectorization platform scaled from single-use service to platform adopted by 10+ internal teams. Redesigned from consultant-driven onboarding to self-serve plug-and-play: managed model (CloudFront bundle, hours to deploy) and self-hosted appliance model (run in your own AWS account). Enables 50K+ users to access document storage, vectorization, and AI workflows independently.",
       "Architected migration of the monolithic Vault to two microservices and a microfrontend using the Backend-for-Frontend (BFF) pattern, enabling independent team ownership and accelerated feature delivery.",
       "Orchestrated modernization from Angular 12 to Angular 20 using Module Federation with microfrontends, reducing platform onboarding from days to hours.",
       "Designed and implemented a distributed job management system with auto-scaling based on ingestion load, reducing infrastructure costs by 35% and improving throughput by 40%.",
@@ -32,7 +32,7 @@ export const experience: Role[] = [
     dates: { start: "2024-05", end: "2025-07" },
     highlights: [
       "Led a technical leadership team addressing platform-wide architectural challenges; drove initiatives in modernization, event architecture, and future-state planning.",
-      "Architected microservice integration between the acquired Parley Pro platform and the core codebase, implementing an authorization microservice and API Gateway patterns.",
+      "Transformed Parley Pro integration from synchronous API-coupled microservices (causing cascading production failures) to event-driven architecture using SQS with UI-as-entry-point orchestration. Result: eliminated incidents, increased team velocity, and enabled independent feature delivery without tight API coordination.",
       "Mentored five or more team members on microservice design principles, improving code quality and reducing architectural debt.",
       "Designed an AngularJS-to-Angular migration strategy leveraging Web Components and lazy loading, cutting build times by 30% and improving FCP/LCP by 50% across the 50K+ user base.",
       "Established a micro-frontend framework using React and Angular with lazy loading, reducing bundle sizes by 30–50% and improving application startup.",

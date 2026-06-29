@@ -42,6 +42,16 @@ export type Education = {
   graduationYear: number;
 };
 
+export type TeamDevelopment = {
+  engineerName: string;
+  startLevel: string;
+  endLevel: string;
+  promotions: number;
+  arc: string;
+  approach: string;
+  outcome: string;
+};
+
 export type Profile = {
   name: string;
   initials: string;

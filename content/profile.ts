@@ -13,4 +13,5 @@ export const profile: Profile = {
   location: "Holly Springs, NC",
   email: "moseleyg96@gmail.com",
   linkedin: "https://www.linkedin.com/in/gmos96",
+  github: "https://github.com/GMos96",
 };
